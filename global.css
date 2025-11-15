@@ -1,0 +1,52 @@
+/* Overall layout */
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+/* Header with title + slider on right */
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.time-filter {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.9rem;
+}
+
+.time-filter time,
+.time-filter em {
+  display: block;
+}
+
+.time-filter em {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 1px;
+  margin-block: 0.75em 0;
+  font-size: 0.85rem;
+}
+
+.legend > div {
+  flex: 1;
+  padding: 0.35rem 0.75rem;
+  text-align: center;
+  color: #ffffff;
+}
